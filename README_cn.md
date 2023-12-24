@@ -1,6 +1,10 @@
 # ezftps
+
 A FTP server based Python3
+
+简体中文 [English](README.md "The English version of this manual")。
 # 1.使用说明
+
 需要注意的是，即使是发行版也不支持即时使用，您需要进行某些配置
 
 如果程序不能正确读取配置文件，程序将无法启动。
