@@ -22,13 +22,13 @@ try:
         file_encoding = config[section]['file_encoding']
         serve_port = config[section]['serve_port']
         server_ip = config[section]['server_ip']
+    status = 1
 except:
     print("Error reading settings file")
     print('Please refer to the readme.md file for more information')
     status = 0
 if status == 0:
     exit()
-
 authorizer = DummyAuthorizer()
 authorizer.add_user(uName, Pwd, pAth, perm=Perm_F)
 handler = FTPHandler
