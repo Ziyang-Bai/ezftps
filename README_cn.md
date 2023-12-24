@@ -1,3 +1,5 @@
+# ezftps
+A FTP server based Python3
 # 1.使用说明
 需要注意的是，即使是发行版也不支持即时使用，您需要进行某些配置
 
