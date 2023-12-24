@@ -3,11 +3,12 @@ from pyftpdlib.servers import FTPServer
 from pyftpdlib.authorizers import DummyAuthorizer
 import configparser
 import os
+import sys
 config = configparser.ConfigParser()
 if not os.path.exists('settings.ini'):
     print("settings file not found")
     print('Please refer to the readme.md file for more information')
-    exit()
+    sys.exit()
 
 config.read('settings.ini')
 
@@ -28,7 +29,7 @@ except:
     print('Please refer to the readme.md file for more information')
     status = 0
 if status == 0:
-    exit()
+    sys.exit()
 authorizer = DummyAuthorizer()
 authorizer.add_user(uName, Pwd, pAth, perm=Perm_F)
 handler = FTPHandler
