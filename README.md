@@ -1,5 +1,6 @@
 # ezftps
 A FTP server based Python3
+
 English [简体中文](README_cn.md "The Chinese version of this manual")。
 # 1.Instructions for use
 It should be noted that even the distribution version does not support instant use, and you need to make certain configurations
